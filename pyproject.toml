@@ -5,7 +5,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "stash-pass"
+name = "stash-pass-cli"
 description = "A CLI for locally and securly storing passwords."
 readme = "README.md"
 version = "0.0.1"

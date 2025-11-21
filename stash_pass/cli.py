@@ -8,8 +8,3 @@ app = typer.Typer(help="🔑 Stash Pass CLI")
 app.add_typer(vault_app, name="vault")
 app.add_typer(settings_app, name="settings")
 
-def main():
-    app()
-
-if __name__ == "__main__":
-    main()

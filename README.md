@@ -1,5 +1,7 @@
 # Stash Pass CLI
 
+![assets/stash-pass-logo.png](assets/stash-pass-logo.png)
+
 Stash Pass is a command-line tool for securely managing your passwords locally. All data is encrypted using a master password and never leaves your machine.
 
 ## Features
@@ -8,22 +10,24 @@ Stash Pass is a command-line tool for securely managing your passwords locally. 
 - Simple CLI for adding, retrieving, listing, and deleting passwords
 - Master password protection
 
-## Installation
+## Local Installation
 
 1. Clone this repository:
 	```bash
 	git clone https://github.com/mrjaketomlinson/stash-pass-cli.git
-	cd stash-pass
+	cd stash-pass-cli
 	```
 2. Install dependencies:
 	```bash
-	pip install -r requirements.txt
+	uv sync
 	```
-3. (Optional) Install as a CLI tool:
+3. Build
 	```bash
-	pip install .
-	# or
-	python -m pip install .
+	uv build
+	```
+3. Install as a CLI tool:
+	```bash
+	pipx install dist/*.whl
 	```
 
 ## Usage

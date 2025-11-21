@@ -1,12 +1,11 @@
 import json
-import time
 from pathlib import Path
 
 APP_DIR = Path.home() / ".stash_pass"
 SETTINGS_FILE = APP_DIR / "settings.json"
 STATE_FILE = APP_DIR / "state.json"
 
-# TODO: Implement persistent caching of unlock state
+# TODO: Implement persistent caching of unlock state (maybe OS keyring?)
 # For now, we just track in-memory (will ask for password each time)
 DEFAULT_SETTINGS = {"password_timeout": 300}  # 5 minutes
 

@@ -13,7 +13,8 @@ requires-python = ">=3.9"
 dependencies = [
     "typer>=0.16.0,<0.17.0",
     "cryptography>=45.0.7,<45.1.0",
-    "pyperclip>=1.10.0,<1.11.0"
+    "pyperclip>=1.10.0,<1.11.0",
+    "pytest>=8.4.2",
 ]
 authors = [
     {name = "Jacob Tomlinson", email = "jacob.tomlinson21@gmail.com"}
